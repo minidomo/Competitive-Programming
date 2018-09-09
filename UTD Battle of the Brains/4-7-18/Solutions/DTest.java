@@ -3,16 +3,9 @@ import java.util.*;
 
 public class DTest {
     public static void main(String[] args) throws Exception {
-        // this is not a part of the solution, this is just to get the file path of the
-        // input and/or output
-        String currentDirectory = System.getProperty("user.dir");
-        String testDataPath = currentDirectory.substring(0, currentDirectory.lastIndexOf("\\") + 1) + "Test Data\\";
-        String inputFilePath = testDataPath + "D.txt";
-        String outputFilePath = testDataPath + "D.out";
-
         // BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader sc = new BufferedReader(new InputStreamReader(new FileInputStream(inputFilePath)));
-        BufferedReader check = new BufferedReader(new InputStreamReader(new FileInputStream(outputFilePath)));
+        BufferedReader sc = new BufferedReader(new InputStreamReader(new FileInputStream("D.txt")));
+        BufferedReader check = new BufferedReader(new InputStreamReader(new FileInputStream("D.out")));
         BufferedWriter dc = new BufferedWriter(new OutputStreamWriter(System.out));
 
         boolean worked = true;

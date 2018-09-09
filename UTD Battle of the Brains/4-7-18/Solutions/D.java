@@ -3,14 +3,8 @@ import java.util.*;
 
 public class D {
     public static void main(String[] args) throws Exception {
-        // this is not a part of the solution, this is just to get the file path of the
-        // input and/or output
-        String currentDirectory = System.getProperty("user.dir");
-        String testDataPath = currentDirectory.substring(0, currentDirectory.lastIndexOf("\\") + 1) + "Test Data\\";
-        String inputFilePath = testDataPath + "D.txt";
-
         // BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader sc = new BufferedReader(new InputStreamReader(new FileInputStream(inputFilePath)));
+        BufferedReader sc = new BufferedReader(new InputStreamReader(new FileInputStream("D.txt")));
         BufferedWriter dc = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int cases = Integer.parseInt(sc.readLine());
