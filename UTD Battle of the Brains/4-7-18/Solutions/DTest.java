@@ -27,7 +27,7 @@ public class DTest {
                 String myAnswer = (i++) + " " + bst.query[Integer.parseInt(s)];
                 boolean passed = myAnswer.equals(actualAnswer);
                 if (!passed)
-                    dc.write("FAIL -> " + myAnswer + " | " + actualAnswer);
+                    dc.write("FAIL -> " + myAnswer + " | " + actualAnswer + "\n");
                 worked = worked && passed;
             }
         }
