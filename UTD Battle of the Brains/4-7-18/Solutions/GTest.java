@@ -35,6 +35,7 @@ public class GTest {
                     }
                 }
             }
+            lengths.add(100);
             while (!lengths.isEmpty()) {
                 maxLength = lengths.poll();
                 if (checkIfValid(modded, maxLength))
