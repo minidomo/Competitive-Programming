@@ -10,14 +10,13 @@ public class K {
         while (cases-- > 0) {
             String first = sc.readLine(), second = sc.readLine();
             int min = Math.min(first.length(), second.length());
-            int largest = -1;
             String replace = "";
             for (int x = 1; x <= min; x++) {
                 String back = first.substring(first.length() - x, first.length());
                 String front = second.substring(0, x);
-                if (back.equals(front) && back.length() > largest) {
-                    largest = back.length();
+                if (back.equals(front)) {
                     replace = back;
+                    break;
                 }
             }
             dc.write((first + second).replace(replace, "") + "\n");
