@@ -27,7 +27,8 @@ public class A {
                         val = c + 1 - r;
                         if (val > most)
                             most = val;
-                    }
+                    } else
+                        break;
                 }
                 r = ++c;
             }
