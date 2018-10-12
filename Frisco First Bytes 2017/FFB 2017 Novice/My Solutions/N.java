@@ -29,13 +29,14 @@ public class N {
                 printf("%s uses %s!\n", name[(x & 1) == 0 ? 0 : 1], ((x & 1) == 0 ? moves1 : moves2).poll());
             String person, other, last;
             person = other = last = "";
-            while (!moves1.isEmpty()) {
+            int count = 0;
+            while (!moves1.isEmpty() && count++ < 2) {
                 person = name[0];
                 other = name[1];
                 last = moves1.poll();
                 printf("%s uses %s!\n", name[0], last);
             }
-            while (!moves2.isEmpty()) {
+            while (!moves2.isEmpty() && count++ < 2) {
                 person = name[1];
                 other = name[0];
                 last = moves2.poll();

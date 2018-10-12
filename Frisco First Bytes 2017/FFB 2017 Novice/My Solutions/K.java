@@ -11,15 +11,16 @@ public class K {
             String first = sc.readLine(), second = sc.readLine();
             int min = Math.min(first.length(), second.length());
             String replace = "";
+            int largest = -1;
             for (int x = 1; x <= min; x++) {
                 String back = first.substring(first.length() - x, first.length());
                 String front = second.substring(0, x);
-                if (back.equals(front)) {
+                if (back.equals(front) && back.length() > largest) {
+                    largest = back.length();
                     replace = back;
-                    break;
                 }
             }
-            dc.write((first + second).replace(replace, "") + "\n");
+            dc.write(String.join("", (first + second).split(replace)) + "\n");
             dc.flush();
         }
         dc.close();

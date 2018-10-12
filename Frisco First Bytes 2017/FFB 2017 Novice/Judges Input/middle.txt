@@ -1,0 +1,7 @@
+5
+A, B, C, 1.00 2.00 3.00
+Short Stack, Regular Stack, Jumbo Stack, 3.50 4.50 6.00
+One Scoop Cone, Two Scoops Cone, Three Scoops Cone, 1.22 3.44 99.00
+basic, standard, delux, 200.00 300.00 500.00
+hair cut, hair cut and dry, hair cut and style, 24.99 34.99 49.99
+

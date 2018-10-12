@@ -12,6 +12,7 @@ public class J {
         map.put("E", 90);
         map.put("SE", 90 + 45);
         map.put("S", 180);
+        map.put("SW", 180 + 45);
         map.put("W", 270);
         map.put("NW", 270 + 45);
 
@@ -19,7 +20,10 @@ public class J {
         while (cases-- > 0) {
             String[] tokens = sc.readLine().split(" ");
             int num1 = map.get(tokens[0]), num2 = map.get(tokens[1]);
-            dc.write(Math.min(Math.abs(num1 - num2), Math.abs(num2 - num1)) + "\n");
+            int min = Math.min(Math.abs(num1 - num2), Math.abs(num2 - num1));
+            if (min > 180)
+                min = 360 - min;
+            dc.write(min + "\n");
             dc.flush();
         }
 

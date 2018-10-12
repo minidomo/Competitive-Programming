@@ -9,11 +9,11 @@ public class O {
         int cases = Integer.parseInt(sc.readLine());
         for (int num = 1; num <= cases; num++) {
             int count = 0;
-            String[] arr = sc.readLine().split("~");
+            String[] arr = (sc.readLine() + " ").split("~");
             count += arr.length - 1;
-            arr = String.join("", arr).split("<><");
+            arr = String.join(" ", arr).split("<><");
             count += (arr.length - 1) * 3;
-            arr = String.join("", arr).split("><>");
+            arr = String.join(" ", arr).split("><>");
             count += (arr.length - 1) * 3;
             dc.write("Line #" + num + " will produce " + count + " Floatsam Fish Nuggets\n");
             dc.flush();

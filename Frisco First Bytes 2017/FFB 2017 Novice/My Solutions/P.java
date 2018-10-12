@@ -16,14 +16,16 @@ public class P {
             int row = 0, col = 0;
             for (int r = 0, i = 0; r < arr.length; r++, i = 0)
                 for (String s : sc.readLine().split(" ")) {
-                    arr[r][i++] = Integer.parseInt(s);
-                    if (arr[r][i - 1] == 1) {
+                    arr[r][i] = Integer.parseInt(s);
+                    if (arr[r][i] == 1) {
                         row = r;
-                        col = i - 1;
+                        col = i;
                     }
+                    i++;
                 }
             recur(arr, row, col, 0);
             dc.write(status + "\n");
+            dc.flush();
             status = "No Bonus";
         }
 
