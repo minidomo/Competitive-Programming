@@ -20,9 +20,7 @@ public class J {
         while (cases-- > 0) {
             String[] tokens = sc.readLine().split(" ");
             int num1 = map.get(tokens[0]), num2 = map.get(tokens[1]);
-            int min = Math.min(Math.abs(num1 - num2), Math.abs(num2 - num1));
-            if (min > 180)
-                min = 360 - min;
+            int min = Math.min(Math.abs(num1 - num2), 360 - Math.abs(num1 - num2));
             dc.write(min + "\n");
             dc.flush();
         }
