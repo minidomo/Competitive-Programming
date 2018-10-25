@@ -1,0 +1,17 @@
+16
+---oo----------oo------
+-o--o-oo-----o--o-oo---
+-o----ooo----o----ooo--
+ooooooooooooooooooooooo
+oooooooooo-ooooooooooo-
+-o-oooo-oo-oooo--oo-ooo
+-----------o-----------
+o-o-o-o-o-o-o-o-o-o-o-o
+oo-oooooo----ooo--o---o
+oooo-oo-oo-ooooooooo-oo
+o-o-o-o-o-o-o-o-o-o-o-o
+ooo-ooo-ooo-ooo-ooo-ooo
+o-oo-ooo-oooo-ooooo-ooo
+oooo-oooo-oooo-oooo-ooo
+oooo-ooo-o-o-o-ooo-oooo
+oo--oo--oo--oo--oo--oo-
