@@ -44,23 +44,19 @@ public class snooze {
             int count = cur[2];
             dist[r][c] = Math.min(dist[r][c], count);
             visit[r][c] = true;
-            if (isValid(r - 1, c, count))
+            if (isValid(r - 1, c))
                 q.add(new int[] { r - 1, c, count + 1 });
-            if (isValid(r + 1, c, count))
+            if (isValid(r + 1, c))
                 q.add(new int[] { r + 1, c, count + 1 });
-            if (isValid(r, c - 1, count))
+            if (isValid(r, c - 1))
                 q.add(new int[] { r, c - 1, count + 1 });
-            if (isValid(r, c + 1, count))
+            if (isValid(r, c + 1))
                 q.add(new int[] { r, c + 1, count + 1 });
         }
     }
 
-    private static boolean isValid(int r, int c, int count) {
-        if (r < 0 || r >= A || c < 0 || c >= A || arr[r][c] == '#' || arr[r][c] == 'S')
-            return false;
-        if (count + 1 < dist[r][c])
-            return true;
-        if (visit[r][c])
+    private static boolean isValid(int r, int c) {
+        if (r < 0 || r >= A || c < 0 || c >= A || arr[r][c] == '#' || arr[r][c] == 'S' || visit[r][c])
             return false;
         return true;
     }
