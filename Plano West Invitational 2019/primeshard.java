@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // Solved by JB Ladera
-// Solved a fter contest
+// Solved after contest
 public class primeshard {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
