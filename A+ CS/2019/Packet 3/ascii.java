@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class ASCII {
+public class Ascii {
 
     public static void main(String[] args) throws Exception {
         System.out.println("  AAAA     SSSSSS    CCCCC    IIIIIIII  IIIIIIII");

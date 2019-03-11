@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class elevator {
+public class Elevator {
     private static ArrayList<Integer> a;
     private static int max;
 

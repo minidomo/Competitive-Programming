@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class candyshop {
+public class CandyShop {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int[] val = { 3, 5, 50, 100, 10 };

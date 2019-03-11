@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class linecalculator {
+public class LineCalculator {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);

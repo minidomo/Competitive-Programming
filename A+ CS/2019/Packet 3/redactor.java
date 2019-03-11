@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class redactor {
+public class Redactor {
 
     private static int pos;
 
