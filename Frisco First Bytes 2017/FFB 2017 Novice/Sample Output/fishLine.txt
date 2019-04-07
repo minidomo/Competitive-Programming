@@ -1,3 +1,0 @@
-Line #1 will produce 6 Flotsam Fish Nuggets
-Line #2 will produce 13 Flotsam Fish Nuggets
-Line #3 will produce 6 Flotsam Fish Nuggets

@@ -1,5 +1,0 @@
-4
-Small Drink, Medium Drink, Large Drink, .79 1.29 1.79
-Short Mocha, Tall Mocha, Venti Mocha, 2.99 3.99 4.99
-Good Oil, Better Oil, Best Oil, 24.95 29.95 34.95
-Semi-Ok, Ok, Wow!,  79.95 79.95 92.95
