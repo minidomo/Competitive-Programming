@@ -1,41 +1,34 @@
 import java.io.*;
 import java.util.*;
 
-public class DTest {
+public class D {
     public static void main(String[] args) throws Exception {
-        // BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader sc = new BufferedReader(new InputStreamReader(new FileInputStream("D.txt")));
-        BufferedReader check = new BufferedReader(new InputStreamReader(new FileInputStream("D.out")));
-        BufferedWriter dc = new BufferedWriter(new OutputStreamWriter(System.out));
+        // this is not a part of the solution, this is just to get the file path of the
+        // input and/or output
+        String currentDirectory = System.getProperty("user.dir");
+        String testDataPath = currentDirectory.substring(0, currentDirectory.lastIndexOf("\\") + 1) + "Test Data\\";
+        String inputFilePath = testDataPath + "D.txt";
 
-        boolean worked = true;
+        // BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader sc = new BufferedReader(new InputStreamReader(new FileInputStream(inputFilePath)));
+        BufferedWriter dc = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int cases = Integer.parseInt(sc.readLine());
         for (int x = 0; x < cases; x++) {
-            // reads the number of elements and queries
             String[] init = sc.readLine().split(" ");
             int size = Integer.parseInt(init[0]);
             BST bst = new BST(size);
-            // reads the elements in the array
             for (String s : sc.readLine().split(" ")) {
                 bst.insert(Integer.parseInt(s));
             }
             int i = 1;
-            // reads the queries
             for (String s : sc.readLine().split(" ")) {
-                String actualAnswer = check.readLine();
                 String myAnswer = (i++) + " " + bst.query[Integer.parseInt(s)];
-                boolean passed = myAnswer.equals(actualAnswer);
-                if (!passed)
-                    dc.write("FAIL -> " + myAnswer + " | " + actualAnswer + "\n");
-                worked = worked && passed;
+                dc.write(myAnswer + "\n");
             }
         }
-
-        dc.write(worked + "\n"); // true if passed all
         dc.close();
         sc.close();
-        check.close();
     }
 
     private static class BST {

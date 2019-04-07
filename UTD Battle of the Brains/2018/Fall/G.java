@@ -6,7 +6,7 @@ public class G {
         BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter dc = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        long[][] arr = new long[30][30];
+        long[][] arr = new long[10][10];
         for (int c = 0; c < arr.length; c++)
             arr[0][c] = 1;
 
