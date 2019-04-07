@@ -59,7 +59,6 @@ int main() {
         vector<tri> curs;
         vector<quad> times;
         t = B[a].t;
-        curs.push_back(B[a++]);
         while (a < Q && B[a].t == t)
             curs.push_back(B[a++]);
         while (b < N && A[b].t <= t)
